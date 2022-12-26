@@ -5,4 +5,4 @@
 <h2><a href="">Live Demo</a></h2>
 <hr/>
 <h3>My First responsive Web Design template.</h3>
-<img src="" alt="screenshot"> 
+<img src="assets/img/activity-clone.png" alt="screenshot"> 
