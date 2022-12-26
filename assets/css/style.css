@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+*{
+    font-family: 'Lato', sans-serif;
+}
+/* common code start */
+.title{
+    justify-content: center;
+    align-items: center;
+}
+.title h3{
+    font-size: 45px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+@media (min-width: 0px) and (max-width: 991px){
+    .title h3{
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+.title h3::after{
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 4px;
+    top: 100%;
+    background-color: #333;
+    left: 30%;
+}
+@media (min-width: 0px) and (max-width: 991px){
+    .title h3::after{ 
+        height: 3px;
+        top: 100%;
+        background-color: #333;
+        left: 25%;
+    }
+}
+.title-w{
+    justify-content: center;
+    align-items: center;
+}
+.title-w h3{
+    font-size: 45px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+@media (min-width: 0px) and (max-width: 991px){
+    .title-w h3{
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+.title-w h3::after{
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 4px;
+    top: 100%;
+    background-color: #fff;
+    left: 30%;
+}
+@media (min-width: 0px) and (max-width: 991px){
+    .title-w h3::after{
+        height: 3px;
+        top: 100%;
+        left: 25%;
+    }
+}
+/* common code end */
+/* header code start */
+header{
+    height: 75px;
+    z-index: 9;
+    position: absolute;
+}
+header nav{
+    text-align: center;
+}
+@media (min-width: 0px) and (max-width: 991px){
+    header nav.navbar div ul.navbar-nav li{
+        background-color: #fff;
+        width: 100%;
+    }
+}
+header nav .navbar-brand{
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+}
+header nav .navbar-brand span{
+    font-weight: 400;
+    color: #30c39e;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #30c39e;
+  }
+header nav button.navbar-toggler{
+    background-color: #30c39e;
+    padding: .5rem 1em;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+header nav button.navbar-toggler:focus {
+    box-shadow: none;
+  }
+header nav button.navbar-toggler span{
+    color: #fff
+}
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: #30c39e;
+}
+.navbar-nav .nav-link{
+    color: #fff;
+    width: 100%;
+}
+@media (min-width: 0px) and (max-width: 991px){
+    .navbar-nav .nav-link{
+        color: rgba(0, 0, 0, 0.9);
+    }
+}
+.navbar-nav .nav-link:hover{
+    color: #30c39e;
+}
+.nav-item ul .dropdown-item:hover{
+    color: #30c39e;    
+}
+/* header code start */
+/* banner code start */
+.banner-sec {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner-sec .banner-inner{
+    padding-top: 30%;
+}
+@media (min-width: 768px){
+    .banner-sec .banner-inner{
+        padding-right: 40%;
+        padding-top: 20%;
+        padding-bottom: 6%;
+    }
+}
+.banner-sec .banner-inner h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.banner-sec .banner-inner h2{
+    font-size: 65px;
+    color: #30c39e;
+    font-weight: 800;
+    text-transform: capitalize;   
+}
+@media (min-width: 0px) and (max-width: 767px){
+    .banner-sec .banner-inner h2{
+        font-size: 45px;   
+    }
+}
+.banner-sec .banner-inner h4{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+.banner-sec .banner-inner p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 2;
+}
+.banner-sec .banner-inner a{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: .5rem 2rem;
+    border-radius: .1rem;
+    transition: .8s all;
+}
+.banner-sec .banner-inner a:hover{
+    background-color: #30c39e;
+    border: 2px solid #30c39e;
+}
+/* banner code end */
+/* about code start */
+.about-main .about-cv h4{
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+}
+.about-main .about-cv p{
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+}
+.about-main .about-cv a{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #30c39e;
+    transition: .6s all;
+}
+.about-main .about-cv a:hover{
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+/* about code end */
+/* services code start */
+.services-sec{
+    background-color: #30c39e;
+}
+.services-row div h5 span{
+    font-size: 35px;
+}
+/* services code end */
+/* experience code start */
+.exp-card .card-body h5 span{
+    font-size: 13px;
+    display: inline-block;
+    background-color: #30c39e;  
+}
+/* experience code end */
+/* blog code start */
+.blog-sec{
+    background: url(../img/blog1.jpg) no-repeat center;
+    background-size: cover;
+}
+.blog-card .card-body h5 span{
+    font-size: 13px;
+    display: inline-block;
+    background-color: #30c39e;  
+}
+.blog-card .card-body a.card-link{
+    font-size: 14px;
+    display: inline-block;
+    color: #0a8ea0;  
+}
+/* blog code end */
+/* Projects code start */
+
+/* Projects code end */
+/* mwhm code start */
+.mwhm-sec{
+    background-color: #0A8EA0;
+}
+.mwhm-inner{
+    max-width: 60%;
+}
+@media (min-width: 0px) and (max-width: 992px){
+    .mwhm-inner{
+        max-width: 90%;
+    }
+}
+.mwhm-inner h3{
+    letter-spacing: .1rem;
+}
+.mwhm-inner a.mw-btn{
+    color: #0A8EA0;
+    background-color: #fff;
+}
+.mwhm-inner a.mw-btn:hover{
+    color: #fff;
+    background-color: #333;
+}
+.mwhm-inner a.hm-btn{
+    color: #fff;
+    background-color: #333;
+}
+.mwhm-inner a.hm-btn:hover{
+    color: #0A8EA0;
+    background-color: #fff;
+}
+/* mwhm code end */
+/* contact code start */
+.contact-inner .icon span {
+    color: #30c39e;
+}
+.contact-inner .contact-left p,
+.contact-inner .contact-left p a {
+    margin: 0;
+    line-height: 28px;
+    letter-spacing: .5px;
+    font-size: 16px;
+    color: #666;
+}
+.contact-inner .map iframe {
+    width: 100%;
+    min-height: 260px;
+    border: 5px solid #eee;
+}
+.contact-inner .contact-right label {
+    width: 17%;
+    float: left;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+.contact-inner .contact-right label span {
+    color: #30c39e;
+}
+.contact-inner .contact-right input[type="text"],
+.contact-inner .contact-right input[type="email"],
+.contact-inner .contact-right textarea {
+    outline: none;
+    width: 83%;
+    padding: 0.9em 1.3em;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #888;
+    border: none;
+    border: 1px solid #ccc;
+    background: none;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+}
+.contact-inner .contact-right textarea {
+    min-height: 120px;
+    resize: none;
+}
+.contact-inner .contact-right button[type="submit"] {
+    padding: 11px 35px;
+    color: #fff;
+    background: #0a8ea0;
+    border: 2px solid #0a8ea0;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}
+/* contact code end */
+/* footer code start */
+footer {
+    background: #191919;
+}
+footer .copyright p, .copyright p a {
+    color: #999;
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer .social ul li {
+    display: inline-block;
+}
+footer .social ul li a {
+    color: #999;
+    text-align: center;
+    text-decoration: none;
+}
+footer .social ul li a span {
+    height: 42px;
+    width: 42px;
+    font-size: 13px;
+    background: #222;
+    line-height: 42px;
+    color: #999;
+    border-radius: 2px;
+    transition: 0.5s all;
+}
+/* footer code end */
